@@ -5,25 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-
-    <h1>Lançamento Vertical</h1>
-    <div class="posição inicial " id="posição inicial">
-        <label for="user">Posição inicial(m)<input type="number"></label>
-         <div class="velocidade inicial" id="velocidade inicial"></div>
-         <label for="user"> velocidade inicial(m) <input type="number"></label>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+    
+<h1>Lançamento Vertical</h1> <!--título do site-->
+    <div class="centralizado">
+<br>
+        <div class="posição inicial">
+            <label for="inputposiçãoinicial">Posição inicial(m)  <input type="number" name="p" id="inputposiçãoinicial"></label> <!--Input e label para colocar o número do cálculo -->
+        </div>
+<br>
+        <div class="velocidade inicial">
+            <label for="inputvelocidadeinicial">Velocidade Inicial(m/s)  <input type="number" name="v" id="inputvelocidadeinicial"></label> <!--a mesma coisa da posição inicial-->
+        </div>
     </div>
+<br>
+    
+<div class="tempo">
+    <label for="inputtempo">Tempo(s)<input type="number" name="t" id="inputtempo"></label> <!--a mesma coisa da posição inicial-->
+</div>
 
+
+<div class="botão" id="calcular">
+        <button id="calcular">Calcular</button> <!--botão que quando clicado revela o resultado-->
+    </div>
+    
+    <br>
+    <div class="resultado" id="resultado">
+        <p id="resultado"></p> <!--onde aparece o resultado-->
+    </div>
+    
+
+</body>
+
+</html>
